@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <style>
+      .box {
+        width: 240px;
+      }
+      .title {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .input {
+        margin-bottom: 20px;
+      }
+      .cookies-input {
+        width: calc(100% - 48px);
+      }
+      .button {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="title">移植cooke</div>
+      <div class="input">
+        从：<input
+          class="cookies-input"
+          id="source_url"
+          placeholder="请输入要copy的链接"
+        />
+      </div>
+      <div class="input">
+        到：<input
+          class="cookies-input"
+          id="target_url"
+          placeholder="请输入移入的链接"
+        />
+      </div>
+      <div class="button"><button id="confirm">确认</button></div>
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>
